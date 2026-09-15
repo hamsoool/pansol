@@ -15,7 +15,7 @@ import { ScrollProgressBar } from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative pb-16 md:pb-0">
+    <main className="min-h-screen relative pb-[calc(5.5rem+env(safe-area-inset-bottom))] md:pb-0">
       <ScrollProgressBar />
       <Navbar />
       <Hero />

@@ -36,9 +36,9 @@ const config: Config = {
         full: "9999px",
       },
       fontFamily: {
-        display: ["var(--font-playfair)", "Georgia", "serif"],
+        display: ["var(--font-urbanist)", "var(--font-plus-jakarta)", "-apple-system", "sans-serif"],
         sans: ["var(--font-plus-jakarta)", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        serif: ["var(--font-playfair)", "Georgia", "serif"],
+        brand: ["var(--font-urbanist)", "-apple-system", "sans-serif"],
       },
       letterSpacing: {
         widest2: "0.28em",

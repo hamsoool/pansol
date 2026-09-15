@@ -7,23 +7,23 @@ import ScrollReveal from "./ScrollReveal";
 const ENTERTAINMENT_ITEMS = [
   {
     icon: Mic,
-    title: "Dedicated Karaoke & Media Lounge",
-    desc: "Acoustically insulated entertainment room with multi-mic sound system, large display, and plush seating.",
+    title: "Entertainment / Karaoke Room",
+    desc: "Private indoor entertainment & karaoke room with multi-mic sound system, large screen, and comfortable seating.",
   },
   {
     icon: CircleDot,
-    title: "Tournament Billiard Lounge",
-    desc: "Full-size table with cues and billiard lighting, tucked beside the main social area.",
+    title: "Billiard Lounge",
+    desc: "Full tournament-grade billiard table with dedicated lighting, cues, and social lounge seating.",
   },
   {
     icon: Martini,
-    title: "Private Bar & Beverage Counter",
-    desc: "Bring your favorite spirits and mixes. We supply the ice, glassware, and drink preparation bar.",
+    title: "Bar Area",
+    desc: "Dedicated beverage and service counter with glassware, ice prep station, and modern hanging bar pendant lights.",
   },
   {
     icon: UtensilsCrossed,
-    title: "Al Fresco Dining & Terrace",
-    desc: "Long timber tables seating up to 25 pax together for communal barbecue feasts and sunset toasts.",
+    title: "Al Fresco Dining & Lounging Area",
+    desc: "Expansive solid-slab dining tables and open-air terrace lounge seating crafted for group feasts and celebrations.",
   },
 ];
 
@@ -32,12 +32,15 @@ export default function EntertainConnect() {
     <section id="entertain" className="bg-linen py-24 md:py-32 2xl:py-40 overflow-hidden">
       <div className="max-w-content mx-auto px-6 md:px-10 xl:px-16 2xl:px-20 3xl:px-24">
         <ScrollReveal direction="up" delay={0.1} className="max-w-xl lg:max-w-2xl 2xl:max-w-4xl">
+          <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
+            Entertain & Connect
+          </span>
           <h2 className="font-display text-ink text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem] xl:text-[4rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
-            Bond, play &amp; celebrate together
+            Karaoke, billiards &amp; al fresco dining
           </h2>
           <p className="mt-4 2xl:mt-6 font-sans text-ink-light text-[1.02rem] lg:text-[1.08rem] 2xl:text-[1.22rem] leading-relaxed font-normal">
-            Designed for group reunions and company retreats. Whether you&apos;re singing late into the
-            night, challenging friends at billiards, or sharing drinks by the bar, everyone has a place to gather.
+            Whether you&apos;re singing late into the night in the karaoke lounge, challenging friends at billiards,
+            or sharing sunset drinks by the bar, everyone has an inviting place to gather.
           </p>
         </ScrollReveal>
 

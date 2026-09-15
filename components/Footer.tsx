@@ -7,10 +7,15 @@ export default function Footer() {
       <div className="max-w-content mx-auto px-6 md:px-10 xl:px-16 2xl:px-20 3xl:px-24 py-14 2xl:py-20">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 2xl:gap-12">
           <div className="flex items-center gap-3.5">
-            <BrandMark className="w-7 2xl:w-9 h-auto text-linen/80" />
-            <span className="font-display uppercase tracking-widest2 text-linen/85 text-[0.95rem] 2xl:text-[1.15rem]">
-              Glasshill Pansol
-            </span>
+            <BrandMark className="w-8 2xl:w-10 h-auto text-linen/80" />
+            <div className="flex flex-col items-start leading-none">
+              <span className="font-display uppercase tracking-[0.24em] text-linen/90 text-[0.98rem] 2xl:text-[1.18rem] font-medium">
+                GLASSHILL
+              </span>
+              <span className="font-display uppercase tracking-[0.32em] text-stone/70 text-[0.52rem] 2xl:text-[0.62rem] mt-1 font-light">
+                — PANSOL —
+              </span>
+            </div>
           </div>
 
           <ul className="flex flex-wrap gap-x-8 2xl:gap-x-12 gap-y-3 font-sans text-linen/60 text-[0.88rem] 2xl:text-[1.02rem]">

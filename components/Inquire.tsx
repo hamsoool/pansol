@@ -44,12 +44,16 @@ export default function Inquire() {
         <div className="grid lg:grid-cols-12 gap-x-12 lg:gap-x-16 xl:gap-x-20 2xl:gap-x-24 gap-y-14 items-start">
           {/* Left Column: Direct Info */}
           <ScrollReveal direction="up" delay={0.1} className="lg:col-span-5 text-linen">
+            <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-stone/90 font-medium block mb-3 2xl:mb-4">
+              Reserve Your Hillside Escape
+            </span>
             <h2 className="font-display text-[2.6rem] sm:text-[3.2rem] lg:text-[3.6rem] xl:text-[4rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
               Ready for the hills?
             </h2>
             <p className="mt-4 2xl:mt-6 font-sans text-linen/85 text-[1.02rem] lg:text-[1.08rem] 2xl:text-[1.22rem] leading-relaxed max-w-md lg:max-w-lg 2xl:max-w-xl font-normal">
-              Send your preferred dates and group size. We confirm availability directly with
-              zero middleman markups or platform fees.
+              Thoughtfully designed for meaningful gatherings, celebrations, and quiet escapes surrounded by nature.
+              Send your preferred dates and group size (accommodates up to 40 overnight guests). We confirm availability directly with
+              zero middleman markups.
             </p>
 
             {/* Quick Instant Channels */}

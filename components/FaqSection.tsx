@@ -14,32 +14,32 @@ const FAQS: FaqItem[] = [
   {
     question: "What is included with our private booking?",
     answer:
-      "Every booking grants your group 100% exclusive, private use of the entire Glasshill property. This includes all 7 ensuite air-conditioned bedrooms, our private hot-spring pool, kiddie pool, jacuzzi, waterfall feature, acoustic karaoke lounge, full-size billiard table, kitchen appliances, BBQ grill, and secure gated parking inside Laguna Hills Subdivision.",
+      "Every booking grants your group 100% exclusive, private use of the entire Glasshill property. Accommodating up to 40 overnight guests, this includes all 7 private rooms with dedicated ensuite toilet & bath, natural hot spring infinity pool, kiddie pool, jacuzzi, waterfall feature, entertainment & karaoke room, tournament billiard lounge, al fresco dining area, bar, kitchen with essentials provided, BBQ grilling area, complimentary WiFi, PWD-friendly ramp access, and spacious private parking.",
   },
   {
-    question: "Does the villa feature a hot-spring pool?",
+    question: "Does the villa feature a natural hot spring pool?",
     answer:
-      "Yes! The villa features a dedicated hot-spring pool where your group can unwind in soothing warm water day and night, alongside our poolside loungers and waterfall feature.",
+      "Yes! Glasshill features a natural hot spring infinity pool, accompanied by a dedicated kiddie pool, therapeutic jacuzzi, and cascading waterfall feature where your group can soak in warm mineral waters day and night surrounded by hillside nature.",
   },
   {
-    question: "Can we bring our own food and alcoholic drinks? Are there corkage fees?",
+    question: "Can we bring our own food and drinks? What kitchen essentials are provided?",
     answer:
-      "You are welcome to bring all your own groceries, food, and drinks with absolutely NO corkage fees. We supply refrigerator, gas stoves, microwave oven, rice cooker, water dispenser, and BBQ grill. Simply bring charcoal and your group's favorite ingredients.",
+      "You are welcome to bring all your own groceries, food, and drinks with 100% zero corkage fees. Our kitchen provides essentials including refrigerator, gas stove, microwave, water dispenser, kettle, and pots & pans. An outdoor BBQ grilling area is also ready for poolside cookouts.",
   },
   {
-    question: "How many vehicles can park on the premises?",
+    question: "How many overnight guests can Glasshill accommodate?",
     answer:
-      "Our gated, private driveway comfortably accommodates 4 to 5 sedans or large SUVs inside Laguna Hills Subdivision. The access roads through the subdivision all the way to our gate are fully paved, requiring no 4x4 or high-clearance vehicles.",
+      "Glasshill comfortably accommodates up to 40 overnight guests across our 7 private air-conditioned bedrooms, each with its own dedicated ensuite toilet and bath with heated shower.",
   },
   {
     question: "Is the villa accessible for seniors or PWD guests?",
     answer:
-      "Yes, Glasshill features a dedicated ramp providing step-free access to the lower lounge areas, poolside terrace, and ground-level accommodations.",
+      "Yes, Glasshill is thoughtfully designed with PWD-friendly ramp access providing step-free movement to the main social decks, dining hall, and primary villa levels, alongside a spacious private on-site parking area.",
   },
   {
     question: "What are the karaoke and quiet hours?",
     answer:
-      "In accordance with local community guidelines, outdoor amplified sound is requested to lower by 10:00 PM. However, our indoor entertainment room is sound-insulated so you can continue singing and bonding indoors responsibly.",
+      "In accordance with local community guidelines, outdoor sound is requested to lower by 10:00 PM. However, our indoor entertainment room is sound-insulated so you can continue singing karaoke and playing billiards indoors with your group.",
   },
 ];
 

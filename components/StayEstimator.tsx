@@ -25,13 +25,13 @@ const SHIFTS: ShiftPlan[] = [
     duration: "9 Hours",
     basePrice: 18000,
     basePax: 20,
-    maxPax: 25,
+    maxPax: 40,
     description: "Ideal for birthday celebrations, day pool parties, and daytime corporate planning sessions.",
     features: [
-      "Access to private hot-spring pool, kiddie pool & jacuzzi",
-      "Full kitchen & BBQ grill facility",
-      "Karaoke & billiard lounge access",
-      "Gated parking for 4–5 vehicles in Laguna Hills Subd.",
+      "Natural hot spring infinity pool, kiddie pool & jacuzzi",
+      "Full kitchen with essentials & BBQ grilling area",
+      "Entertainment / karaoke room & billiard lounge",
+      "PWD-friendly ramp access & private parking area",
     ],
   },
   {
@@ -42,13 +42,13 @@ const SHIFTS: ShiftPlan[] = [
     duration: "11 Hours",
     basePrice: 22000,
     basePax: 20,
-    maxPax: 25,
-    description: "Night swim under the stars with our hot-spring pool, midnight BBQ, and indoor karaoke.",
+    maxPax: 40,
+    description: "Night swim under the stars with our natural hot spring pool, midnight BBQ, and indoor karaoke.",
     features: [
-      "Warm hot-spring pool open for evening & night swims",
-      "Illuminated jacuzzi and pool lighting",
-      "Indoor entertainment room with karaoke",
-      "Ensuite bedroom access for rest",
+      "Natural hot spring pool & illuminated jacuzzi for night soaks",
+      "Entertainment / karaoke room & billiard lounge",
+      "Kitchen with essentials provided & BBQ grilling area",
+      "7 private rooms with ensuite toilet & bath for rest",
     ],
   },
   {
@@ -59,13 +59,13 @@ const SHIFTS: ShiftPlan[] = [
     duration: "22 Hours",
     basePrice: 38000,
     basePax: 20,
-    maxPax: 25,
-    description: "The complete Glasshill retreat. Settle into all 7 ensuite bedrooms, soak at sunrise, and savor full privacy.",
+    maxPax: 40,
+    description: "The complete Glasshill retreat. Accommodating up to 40 overnight guests across all 7 private ensuite rooms.",
     features: [
-      "All 7 ensuite private air-conditioned bedrooms",
-      "Full 22-hour unhurried access to all amenities",
-      "Sunset and sunrise hillside views",
-      "Early drop-off of luggage & pool seating",
+      "Accommodates up to 40 overnight guests comfortably",
+      "All 7 private rooms with dedicated ensuite toilet & bath",
+      "Natural hot spring infinity pool, kiddie pool & jacuzzi",
+      "Karaoke room, billiard lounge, bar & al fresco dining",
     ],
   },
 ];
@@ -101,14 +101,17 @@ export default function StayEstimator() {
   return (
     <section id="rates" className="bg-stone py-24 md:py-32 2xl:py-40">
       <div className="max-w-content mx-auto px-6 md:px-10 xl:px-16 2xl:px-20 3xl:px-24">
-        <ScrollReveal direction="up" delay={0.1}>
-          <div className="max-w-2xl lg:max-w-3xl 2xl:max-w-4xl">
-            <h2 className="font-display text-ink text-[2.5rem] sm:text-[3.2rem] lg:text-[3.6rem] xl:text-[4rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
+        <ScrollReveal direction="up" delay={0.1} className="flex flex-col md:flex-row md:items-end justify-between gap-6 lg:gap-12 2xl:gap-16">
+          <div className="max-w-xl lg:max-w-2xl 2xl:max-w-3xl">
+            <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
+              Transparent Rates
+            </span>
+            <h2 className="font-display text-ink text-[2.6rem] sm:text-[3.4rem] lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
               Choose your stay schedule
             </h2>
-            <p className="mt-4 2xl:mt-6 font-sans text-ink-light text-[1.02rem] lg:text-[1.08rem] 2xl:text-[1.22rem] leading-relaxed font-normal">
-              One group per shift. No hidden resort fees or corkage charges, bring your favorite food,
-              drinks, and loved ones.
+            <p className="mt-4 2xl:mt-6 font-sans text-ink-light text-[1.05rem] lg:text-[1.12rem] 2xl:text-[1.25rem] leading-relaxed font-normal">
+              One group per shift. Accommodates up to 40 overnight guests with zero corkage fees.
+              Bring your favorite food, drinks, and loved ones.
             </p>
           </div>
 
@@ -128,7 +131,7 @@ export default function StayEstimator() {
               <input
                 type="range"
                 min="10"
-                max="25"
+                max="40"
                 step="1"
                 value={guestCount}
                 onChange={(e) => setGuestCount(Number(e.target.value))}
@@ -139,7 +142,7 @@ export default function StayEstimator() {
             <div className="mt-2.5 flex justify-between text-[0.78rem] lg:text-[0.82rem] 2xl:text-[0.92rem] font-sans text-clay">
               <span>10 pax (Intimate)</span>
               <span>20 pax (Base)</span>
-              <span>25 pax (Max)</span>
+              <span>40 pax (Overnight Max)</span>
             </div>
 
             {extraGuests > 0 && (

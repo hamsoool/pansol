@@ -7,33 +7,33 @@ import ScrollReveal from "./ScrollReveal";
 const POOL_FEATURES = [
   {
     icon: Waves,
-    label: "Hot-Spring Infinity Pool",
-    desc: "A dedicated warm hot-spring swimming pool terraced into the villa deck, ideal for both morning laps and late-night soaks.",
-    tag: "Warm Water",
+    label: "Natural Hot Spring Infinity Pool",
+    desc: "A warm natural mineral hot-spring pool overlooking the Laguna hillside, perfect for day and night soaks.",
+    tag: "Natural Hot Spring",
   },
   {
     icon: Droplets,
-    label: "Pergola Waterfall Feature",
-    desc: "A revitalizing hydrotherapy cascade pouring under the timber pergola right into the swimming pool.",
-    tag: "Cascade Plunge",
-  },
-  {
-    icon: Bath,
-    label: "Warm-Water Jacuzzi",
-    desc: "Submerged hydro-jets with ambient underwater illumination, accessible through the evening.",
-    tag: "Therapeutic Soak",
+    label: "Waterfall Feature",
+    desc: "A therapeutic hydrotherapy waterfall pouring under the timber pergola into the swimming pool.",
+    tag: "Hydrotherapy",
   },
   {
     icon: Baby,
-    label: "Dedicated Kiddie Pool",
-    desc: "A shallow, safe wading area physically separated from the main swimming deep end for peace of mind.",
+    label: "Kiddie Pool",
+    desc: "A dedicated shallow wading pool built safely for young children and toddlers.",
     tag: "Child-Safe",
   },
   {
+    icon: Bath,
+    label: "Jacuzzi",
+    desc: "Warm-water therapeutic jacuzzi with relaxing bubble jets for deep soothing comfort.",
+    tag: "Therapeutic Soak",
+  },
+  {
     icon: ShowerHead,
-    label: "Poolside Spa Rinse Stations",
-    desc: "Fresh outdoor rainfall rinse showers located conveniently steps away along the covered deck promenade.",
-    tag: "Always Warm",
+    label: "Poolside Rinse",
+    desc: "Fresh outdoor rainfall rinse showers situated right on the timber pool deck.",
+    tag: "Convenient",
   },
 ];
 
@@ -43,13 +43,16 @@ export default function RelaxUnwind() {
       <div className="max-w-content mx-auto px-6 md:px-10 xl:px-16 2xl:px-20 3xl:px-24">
         <ScrollReveal direction="up" delay={0.1} className="flex flex-col md:flex-row md:items-end justify-between gap-6 lg:gap-12 2xl:gap-16">
           <div className="max-w-xl lg:max-w-2xl 2xl:max-w-3xl">
+            <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
+              Relax & Unwind
+            </span>
             <h2 className="font-display text-ink text-[2.6rem] sm:text-[3.4rem] lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
-              A private hot-spring pool under the open sky
+              Natural hot spring infinity pool & jacuzzi
             </h2>
           </div>
           <p className="font-sans text-ink-light text-[1.05rem] lg:text-[1.12rem] 2xl:text-[1.25rem] max-w-md lg:max-w-lg 2xl:max-w-xl leading-relaxed font-normal">
-            The villa features a dedicated hot-spring pool terraced down the hillside deck,
-            giving your group the ideal place to soak, swim, and unwind together.
+            Step into therapeutic natural hot-spring water drawn directly from Pansol&apos;s volcanic springs,
+            complete with a dedicated kiddie pool, soothing jacuzzi, and a revitalizing waterfall feature.
           </p>
         </ScrollReveal>
 

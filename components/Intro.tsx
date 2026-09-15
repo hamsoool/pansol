@@ -8,30 +8,30 @@ import ScrollReveal from "./ScrollReveal";
 const HIGHLIGHTS = [
   {
     icon: Flame,
-    title: "Warm Hot-Spring Pool",
-    desc: "A dedicated hot-spring pool built into the terrace deck for soothing daytime and evening soaks.",
+    title: "Natural Hot Spring Infinity Pool",
+    desc: "A warm mineral hot-spring pool accompanied by a kiddie pool, jacuzzi, and cascading waterfall feature.",
   },
   {
     icon: Key,
     title: "100% Private Buyout",
-    desc: "Zero shared common areas. The entire villa, deck, and grounds are reserved exclusively for your party.",
+    desc: "Zero shared common areas. The entire villa, hot-spring pools, and grounds are reserved exclusively for your party.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "PWD-Friendly Access",
+    desc: "Thoughtfully designed with step-free ramp access for elderly and PWD guests, plus spacious private on-site parking.",
   },
   {
     icon: Mountain,
     title: "Laguna Hills Subdivision",
-    desc: "Gated and perched high within Laguna Hills Subdivision, wrapped by mountain trees and fresh breezes.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Convenient & Secure",
-    desc: "Gated subdivision security, parking for up to 5 vehicles, and step-free ramp access to the main deck.",
+    desc: "Elevated high within private Laguna Hills Subdivision in Pansol, Calamba — wrapped by forest canopies and Mt. Makiling breezes.",
   },
 ];
 
 const STATS = [
-  { n: "7", label: "Ensuite Suites" },
-  { n: "20–25", label: "Guest Capacity" },
-  { n: "3", label: "Terrace Pools" },
+  { n: "7", label: "Ensuite Private Rooms" },
+  { n: "Up to 40", label: "Overnight Guests" },
+  { n: "100%", label: "Exclusive Buyout" },
   { n: "< 2 hrs", label: "Drive from Manila" },
 ];
 
@@ -44,22 +44,21 @@ export default function Intro() {
             <span className="text-[0.78rem] 2xl:text-[0.9rem] font-sans tracking-[0.22em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
               The Glasshill Experience
             </span>
-            <h2 className="font-display text-ink text-[2.6rem] sm:text-[3.4rem] lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[5rem] 3xl:text-[5.6rem] leading-[1.04] font-normal tracking-tight">
-              A whole hillside villa,
+            <h2 className="font-display text-ink text-[2.4rem] sm:text-[3.2rem] lg:text-[3.6rem] xl:text-[4rem] 2xl:text-[4.6rem] 3xl:text-[5.2rem] leading-[1.06] font-normal tracking-tight">
+              Thoughtfully designed for meaningful gatherings,
               <br />
-              <span className="italic font-light text-ink-light">just for your group.</span>
+              <span className="font-light text-ink-light">celebrations & quiet escapes.</span>
             </h2>
 
             <p className="mt-6 font-sans text-ink-light text-[1.02rem] lg:text-[1.08rem] 2xl:text-[1.2rem] 3xl:text-[1.28rem] leading-[1.8] font-normal max-w-xl lg:max-w-2xl 2xl:max-w-3xl">
-              Pansol has been Laguna&apos;s favorite getaway for generations, and
-              Glasshill sits elevated within Laguna Hills Subdivision above the roadside crowds.
-              Built into a private hillside perch, the villa combines contemporary floor-to-ceiling glass
-              architecture with forest solitude and a private hot-spring pool terraced below.
+              Discover Glasshill Pansol — a private hot spring retreat in Pansol, Calamba, Laguna.
+              Whether you&apos;re celebrating life&apos;s milestones, hosting a special gathering,
+              or seeking a peaceful escape, Glasshill offers the privacy and comfort of having the entire
+              property exclusively to yourselves.
             </p>
             <p className="mt-4 font-sans text-ink-light text-[1.02rem] lg:text-[1.08rem] 2xl:text-[1.2rem] 3xl:text-[1.28rem] leading-[1.8] font-normal max-w-xl lg:max-w-2xl 2xl:max-w-3xl">
-              Every booking reserves the entire property. No shared pool, no other families on the
-              next balcony: just your group, seven private suites, and however many days you&apos;ve
-              set aside to slow down and reconnect.
+              From our natural hot spring infinity pool, kiddie pool, and jacuzzi to our 7 private ensuite rooms
+              accommodating up to 40 overnight guests, every amenity is built for effortless connection surrounded by nature.
             </p>
 
             {/* Grid of Key Features */}

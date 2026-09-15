@@ -1,52 +1,52 @@
 "use client";
 
 import Image from "next/image";
-import { BedDouble, Users, Wind, Car, ChefHat, Refrigerator, Flame, Sparkles } from "lucide-react";
+import { BedDouble, Users, Accessibility, Car, ChefHat, Flame, Wifi, Utensils } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const SUITE_FEATURES = [
   {
     icon: BedDouble,
-    title: "7 Ensuite Suites",
-    desc: "Private heated bathroom in every room: no morning bathroom queues for your group.",
+    title: "7 Private Ensuite Rooms",
+    desc: "Every room features its own dedicated private toilet and bath with heated shower.",
   },
   {
     icon: Users,
-    title: "20 to 25 Pax Capacity",
-    desc: "Comfortable group sleeping with crisp hotel linens and fresh hillside breezes.",
+    title: "Up to 40 Overnight Guests",
+    desc: "Spacious group accommodations tailored for milestone celebrations and family reunions.",
   },
   {
-    icon: Wind,
-    title: "Silent Inverter A/C",
-    desc: "Individual split-type silent inverter climate units in all seven guest bedrooms.",
+    icon: Accessibility,
+    title: "Ramp Access for PWD",
+    desc: "Step-free ramp access thoughtfully integrated for elderly guests and PWD accessibility.",
   },
   {
     icon: Car,
-    title: "Gated Parking & Ramp",
-    desc: "Secure parking for 4–5 vehicles with step-free PWD and senior ramp access.",
+    title: "Spacious Private Parking",
+    desc: "Dedicated gated parking area safely accommodating multiple guest vehicles.",
   },
 ];
 
 const DINE_FEATURES = [
   {
-    icon: Sparkles,
-    title: "100% Zero Corkage",
-    desc: "Bring your favorite food, drinks, and alcoholic beverages freely with zero fees.",
-  },
-  {
     icon: ChefHat,
-    title: "Fully Equipped Kitchen",
-    desc: "Gas burners, microwave, electric kettle, rice cooker, and complete cookware provided.",
-  },
-  {
-    icon: Refrigerator,
-    title: "Chillers & Ice Chest",
-    desc: "Large double-door refrigerator and heavy-duty ice cooler to chill group drinks.",
+    title: "Kitchen with Essentials",
+    desc: "Refrigerator, gas stove, microwave, water dispenser, kettle, pots & pans provided.",
   },
   {
     icon: Flame,
-    title: "Charcoal BBQ & Water",
-    desc: "Outdoor patio charcoal BBQ grilling pit, plus hot & cold mineral water dispenser.",
+    title: "BBQ Grilling Area",
+    desc: "Outdoor charcoal grilling station for poolside barbecues and evening feasts.",
+  },
+  {
+    icon: Wifi,
+    title: "Complimentary WiFi",
+    desc: "Fast, reliable wireless internet coverage across suites, dining hall, and pool decks.",
+  },
+  {
+    icon: Utensils,
+    title: "100% Zero Corkage",
+    desc: "Bring your favorite food, ingredients, and beverages freely with zero corkage fees.",
   },
 ];
 
@@ -55,14 +55,17 @@ export default function ComfortDine() {
     <section id="stay" className="bg-stone py-24 md:py-32 2xl:py-40 overflow-hidden">
       <div className="max-w-content mx-auto px-6 md:px-10 xl:px-16 2xl:px-20 3xl:px-24">
         <div className="grid lg:grid-cols-2 gap-x-12 xl:gap-x-20 2xl:gap-x-28 gap-y-16">
-          {/* Bedrooms & Suites Column */}
+          {/* Comfort & Convenience Column */}
           <ScrollReveal direction="up" delay={0.1} className="flex flex-col">
+            <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
+              Comfort &amp; Convenience
+            </span>
             <h2 className="font-display text-ink text-[2.4rem] sm:text-[3rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4.5rem] 3xl:text-[5rem] leading-[1.06] font-normal tracking-tight">
-              Seven private ensuite suites
+              7 private rooms with ensuite bath
             </h2>
             <p className="mt-4 2xl:mt-6 font-sans text-ink-light text-[1.02rem] lg:text-[1.1rem] 2xl:text-[1.22rem] leading-relaxed font-normal max-w-xl 2xl:max-w-2xl">
-              Every room is fully air-conditioned and has its own private bathroom with heated shower.
-              No bathroom queues in the morning: everyone wakes up refreshed.
+              Accommodates up to 40 overnight guests with dedicated ensuite toilet &amp; bath in every room,
+              step-free PWD ramp access, and spacious private parking.
             </p>
 
             {/* Featured High-Res Suite Photo: 481076882 */}
@@ -111,12 +114,15 @@ export default function ComfortDine() {
 
           {/* Dine & Cook Column */}
           <ScrollReveal direction="up" delay={0.25} className="flex flex-col lg:border-l lg:border-rule/50 lg:pl-12 xl:pl-20 2xl:pl-28">
+            <span className="text-[0.78rem] 2xl:text-[0.9rem] font-display tracking-[0.28em] uppercase text-clay font-medium block mb-3 2xl:mb-4">
+              Dine &amp; Cook
+            </span>
             <h2 className="font-display text-ink text-[2.4rem] sm:text-[3rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4.5rem] 3xl:text-[5rem] leading-[1.06] font-normal tracking-tight">
-              Cook freely, zero corkage
+              Kitchen with essentials &amp; BBQ grill
             </h2>
             <p className="mt-4 2xl:mt-6 font-sans text-ink-light text-[1.02rem] lg:text-[1.1rem] 2xl:text-[1.22rem] leading-relaxed font-normal max-w-xl 2xl:max-w-2xl">
-              Cook your group’s favorite family recipes or grill seafood fresh from the Laguna markets.
-              Everything you need is provided.
+              Cook your group&apos;s favorite family recipes or grill seafood fresh from the Laguna markets.
+              Refrigerator, gas stove, microwave, water dispenser, kettle, pots &amp; pans provided — with 100% zero corkage.
             </p>
 
             {/* Featured High-Res Dining Hall & Bar Photo: 480785567 */}
@@ -134,7 +140,7 @@ export default function ComfortDine() {
                     Banquet Dining Hall &amp; Bar
                   </p>
                   <p className="font-sans text-[0.88rem] lg:text-[0.94rem] 2xl:text-[1.05rem] text-linen/90 mt-1 font-light">
-                    Solid-slab tables seating all 25 guests together, with prep bar and staircase atrium.
+                    Solid-slab tables seating groups comfortably together, with prep bar and staircase atrium.
                   </p>
                 </div>
               </div>
