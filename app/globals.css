@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background-color: #f5efe3;
+  color: #3b2e22;
+}
+
+* {
+  border-color: #c3b291;
+}
+
+/* Visible, on-brand keyboard focus */
+:focus-visible {
+  outline: 2px solid #8b7457;
+  outline-offset: 3px;
+}
+
+/* Unify the resort photography with a quiet warm grade so every
+   source photo — regardless of original light — reads as one film. */
+.photo-grade {
+  position: relative;
+  overflow: hidden;
+}
+.photo-grade img {
+  filter: saturate(1.05) contrast(1.03) sepia(0.06);
+}
+.photo-grade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(59, 46, 34, 0) 55%, rgba(33, 24, 18, 0.22) 100%);
+  pointer-events: none;
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: #8b7457;
+  color: #f5efe3;
+}
+
+/* Hide scrollbar for category pills on mobile while keeping swipe function */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
