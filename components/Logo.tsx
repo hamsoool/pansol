@@ -1,4 +1,5 @@
 import React from "react";
+import { LOGO_PATHS } from "./logoPaths";
 
 /**
  * Architectural line-art rendering of the Glasshill Pansol multi-tiered villa,
@@ -6,116 +7,83 @@ import React from "react";
  */
 export function BrandMark({
   className = "",
-  strokeWidth = 1.2,
 }: {
   className?: string;
   strokeWidth?: number;
 }) {
   return (
     <svg
-      viewBox="0 0 100 64"
-      fill="none"
+      viewBox="85 210 770 320"
+      fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"
     >
-      {/* Right Tower Roof & Eaves */}
       <path
-        d="M62 8L69 4L78 8L82 10M62 8L59 10M69 4V7M58 11H83"
-        stroke="currentColor"
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d={LOGO_PATHS.villa}
       />
-      {/* Right Tower Facade & Walls */}
-      <path
-        d="M60 11V34M75 11V32M82 11V26H90V36"
-        stroke="currentColor"
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* Right Tower Architectural Window Grid */}
-      <rect
-        x="63"
-        y="15"
-        width="9"
-        height="14"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.9}
-      />
-      <line
-        x1="67.5"
-        y1="15"
-        x2="67.5"
-        y2="29"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.75}
-      />
-      <line
-        x1="63"
-        y1="22"
-        x2="72"
-        y2="22"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.75}
-      />
+    </svg>
+  );
+}
 
-      {/* Central Cantilevered Roof & Decks */}
-      <path
-        d="M26 21L36 15L56 19M26 21L28 27L58 24M28 27H58M34 22L54 26"
-        stroke="currentColor"
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* Middle Floor Balcony & Glass Sliders */}
-      <path
-        d="M30 30H59V36H30Z"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.9}
-        strokeLinejoin="round"
-      />
-      <line
-        x1="44"
-        y1="30"
-        x2="44"
-        y2="36"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.7}
-      />
-      <path
-        d="M29 36H60M25 41H60"
-        stroke="currentColor"
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
+/**
+ * Exact vector typography rendering of the official GLASSHILL — PANSOL — wordmark.
+ */
+export function VectorWordmark({
+  className = "",
+  tone = "ink",
+}: {
+  className?: string;
+  tone?: "ink" | "linen";
+}) {
+  const titleFill = tone === "ink" ? "#3B2E22" : "#F5EFE3";
+  const subFill = tone === "ink" ? "#8B7457" : "#E9DEC7";
 
-      {/* Left Stepped Terraces & Cantilever Structure */}
-      <path
-        d="M20 37V44H26V41M20 44H12V50"
-        stroke="currentColor"
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+  return (
+    <svg
+      viewBox="85 550 790 145"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-label="GLASSHILL — PANSOL —"
+    >
+      <g fillRule="evenodd" clipRule="evenodd">
+        <path fill={titleFill} d={LOGO_PATHS.title} />
+        <path fill={subFill} d={LOGO_PATHS.sub} />
+      </g>
+    </svg>
+  );
+}
 
-      {/* Organic Hillside Foliage Silhouette at Base */}
-      <path
-        d="M10 52C14 50 16 46 22 47C26 44 32 46 36 49C40 45 47 46 51 50C56 46 62 47 66 50C71 46 78 47 82 50C87 46 93 48 98 52"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.85}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+/**
+ * Full authentic official brand logo (Villa mark + typography)
+ * following the resort color scheme.
+ */
+export function FullBrandLogo({
+  className = "",
+  tone = "ink",
+}: {
+  className?: string;
+  tone?: "ink" | "linen";
+}) {
+  const primaryFill = tone === "ink" ? "#3B2E22" : "#F5EFE3";
+  const subFill = tone === "ink" ? "#8B7457" : "#E9DEC7";
 
-      {/* Gentle Baseline Contour */}
-      <path
-        d="M8 52H100"
-        stroke="currentColor"
-        strokeWidth={strokeWidth * 0.7}
-        strokeLinecap="round"
-      />
+  return (
+    <svg
+      viewBox="80 205 800 495"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-label="Glasshill Pansol Official Logo"
+    >
+      <g fillRule="evenodd" clipRule="evenodd">
+        <path fill={primaryFill} d={LOGO_PATHS.villa} />
+        <path fill={primaryFill} d={LOGO_PATHS.title} />
+        <path fill={subFill} d={LOGO_PATHS.sub} />
+      </g>
     </svg>
   );
 }
